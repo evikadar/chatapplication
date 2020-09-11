@@ -2,19 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #14c5cc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,10 +13,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +20,86 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 71vw;
+  justify-content: space-between;
+}
+
+.chatDisplayHolder {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.inputFieldsHolder {
+  display: flex;
+  height: 15vw;
+  justify-content: space-between;
+}
+
+.chatInputBox {
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.chatInput {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  height: 60%;
+}
+
+.sendButton {
+  display: inline-block;
+  margin: 20px;
+  font-family: "Heebo", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #b20077;
+  position: relative;
+  height: 30%;
+  border-radius: 6px;
+}
+
+.chatMessageHolder {
+  display: flex;
+  align-items: center;
+}
+
+.chatItem {
+  width: 30%;
+  background-color: #ffdd19;
+  margin: 30px 5px;
+  border-radius: 30px;
+}
+
+.left {
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 23px;
+  margin: 10px;
 }
