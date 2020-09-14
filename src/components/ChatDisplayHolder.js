@@ -1,22 +1,11 @@
 import React from 'react';
+import SingleMessage from './SingleMessage';
 
 function ChatDisplayHolder(messages) {
     return (
-        <div class="chatDisplayHolder">
+        <div>
             {messages.messages.map((message) => (
-
-                <div class="chatMessageHolder" className={`${message.sender === 'Amy' ? "left" : "right"}`} >
-
-                    {message.sender === "Amy" &&
-                        <img class="avatar" src={message.avatar} alt="profile"></img>
-                    }
-                    <div class="chatItem">
-                        <p>{message.message}</p>
-                    </div>
-                    {message.sender === "John" &&
-                        <img class="avatar" src={message.avatar} alt="profile"></img>
-                    }
-                </div>
+                <SingleMessage message={message} key={message.id}></SingleMessage>
             ))}
         </div>
     )
